@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BlTh_Serial.MainPage"
+             Title="James Instruments Inc. Bluetooth" BackgroundColor="#DBF700">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Place new controls here -->
+        <Label Text="ComPort" 
+               HorizontalTextAlignment="Center" />
+        
+        <Button x:Name ="ConnectButton" 
+                Text="Connect" 
+                HorizontalOptions="FillAndExpand"
+                Clicked="ConnectClick"/>
+        
+        <Label Text="Data From Instrument" 
+               HorizontalTextAlignment="Center" />
+        
+        <Label  x:Name ="instrumentData"
+                Text="Actual Data From Instrument Will Appear Here!!" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                />
+    </StackLayout>
+
+</ContentPage>
