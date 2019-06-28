@@ -10,4 +10,6 @@ namespace BlTh_Serial.UWP
             return "Comm Port Opened!!";
         }
     }
+
+
 }
